@@ -38,7 +38,7 @@ Guide to pass iGPU to MacOS KVM guest.
   # On shutdown it will rebind the iGPU to the host.
 
   # TIP: Running this on ssh session will helps us a lot to debug the issue.
-  ./boot.sh
+  sudo ./boot.sh
   ```
 
 ## Notes
