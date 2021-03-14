@@ -1,5 +1,5 @@
 # Set your iGPU pci id (fetched from lspci)
-IGPU_PCIID=8086:XXXX
+IGPU_PCIID="8086 XXXX"
 
 modprobe vfio_pci
 modprobe vfio
