@@ -10,7 +10,7 @@ modprobe -r i915
 
 sleep 2
 
-./opencore-boot.sh
+./opencore-boot-pt.sh
 
 sleep 2
 
