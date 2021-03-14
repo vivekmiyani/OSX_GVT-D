@@ -8,7 +8,7 @@ Guide to pass iGPU to MacOS KVM guest.
 - Use precompiled `i915ovmf.rom` from releases OR build yourself.
 - Some system needs FwCFG, see: https://github.com/patmagauran/i915ovmfPkg/wiki/Qemu-FwCFG-Workaround.
 - Place all this 3 files (i.e. `i915ovmf.rom`, `opregion.bin`, `bdsmSize.bin`) in `i915ovmf` directory of this repo.
-- **Note:** This driver lacks the support for HDMI, eDP works out of the box! Try your luck!!
+- **Note:** This driver lacks the support for HDMI :(, eDP works out of the box! Try your luck.!!
 
 #### 2. Configure OpenCore.
 
@@ -29,7 +29,7 @@ Guide to pass iGPU to MacOS KVM guest.
   lspci -D -nn
   ```
 
-- Find your iGPU PCI ID and place it inside `boot.sh`
+- Find your iGPU PCI ID and place it inside `boot.sh`.
 - Boot it:
 
   ```bash
@@ -43,11 +43,11 @@ Guide to pass iGPU to MacOS KVM guest.
 
 ## What is working
 
-- QE/CI !!
+- QE/CI.!!
 
 ## Known issues
 
-- Chrome / Electron based applications causes freeze (GPU hang/reset) or crashes the gues
+- Chrome / Electron based applications causes freeze (GPU hang/reset) or crashes the guest.
 
 ## Credits
 
