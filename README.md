@@ -41,6 +41,14 @@ Guide to pass iGPU to MacOS KVM guest.
   ./boot.sh
   ```
 
+## Notes
+- During iGPU passthrough qemu will write this,
+  ```
+  qemu-system-x86_64: -device vfio-pci,host=0000:00:02.0,id=hostdev0,bus=pcie.0,addr=0x2,romfile=i915ovmf.rom: IGD device 0000:00:02.0 cannot support legacy mode due to existing devices at address 1f.0
+  ```
+  but ignore that warning.
+ - We just need to make sure that iGPU placed by Qemu should match the location defined in `config.plist`, If this thing is correct you will be good to go!!
+
 ## What is working
 
 - QE/CI.!!
