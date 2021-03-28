@@ -1,6 +1,10 @@
 # OSX GVT-D
 Guide to pass iGPU to MacOS KVM guest.
 
+## Prerequisites
+
+- Working MacOS EFI.
+
 ## Procedure
 
 #### 1. Fetch necessary files from [i915ovmfPkg](https://github.com/patmagauran/i915ovmfPkg) repo.
@@ -8,11 +12,11 @@ Guide to pass iGPU to MacOS KVM guest.
 - Use precompiled `i915ovmf.rom` from releases OR build yourself.
 - Some system needs FwCFG, see: https://github.com/patmagauran/i915ovmfPkg/wiki/Qemu-FwCFG-Workaround.
 - Place all this 3 files (i.e. `i915ovmf.rom`, `opregion.bin`, `bdsmSize.bin`) in `i915ovmf` directory of this repo.
-- **Note:** This driver lacks the support for HDMI :(, eDP works out of the box! Try your luck.!!
+- **Note:** This driver lacks the support for HDMI, But eDP works out of the box. Try your luck.!!
 
 #### 2. Configure OpenCore.
 
-- Configure OpenCore / EFI directory as per your requirement.
+- Place working OpenCore to `OpenCore-Catalina` directory.
 - Build it:
 
   ```bash
