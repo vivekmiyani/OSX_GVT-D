@@ -12,7 +12,7 @@ Guide to pass iGPU to MacOS KVM guest.
 - Use precompiled `i915ovmf.rom` from releases OR build yourself.
 - Some system needs FwCFG, see: https://github.com/patmagauran/i915ovmfPkg/wiki/Qemu-FwCFG-Workaround.
 - Place all this 3 files (i.e. `i915ovmf.rom`, `opregion.bin`, `bdsmSize.bin`) in `i915ovmf` directory of this repo.
-- **Note:** This driver lacks the support for HDMI, But eDP works out of the box. Try your luck.!!
+- **Note:** eDP works out of the box, May also support HDMI. Try your luck.!!
 
 #### 2. Configure OpenCore.
 
