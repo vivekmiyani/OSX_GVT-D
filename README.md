@@ -57,9 +57,10 @@ Guide to pass iGPU to MacOS KVM guest.
 
 - QE/CI.!!
 
-## Known issues
+## Known issues & Fixes
 
-- Chrome / Electron based applications causes freeze (GPU hang/reset) or crashes the guest.
+1. Chrome / Electron based applications causes freeze (GPU hang/reset) or crashes the guest.
+    - Can be fixed by [this guide](https://github.com/patmagauran/i915ovmfPkg/wiki/DVMT-Pre-Alloc---Stolen-Memory-Issues).
 
 ## Credits
 
