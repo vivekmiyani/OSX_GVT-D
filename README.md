@@ -16,7 +16,7 @@ Guide to pass iGPU to MacOS KVM guest.
 
 #### 2. Configure OpenCore.
 
-- Place working OpenCore to `OpenCore-Catalina` directory.
+- Replace working OpenCore EFI to `OpenCore-Catalina` directory.
 - Build it:
 
   ```bash
